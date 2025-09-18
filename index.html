@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact List App</h1>
+    </header>
+    <main>
+        
+        <form id="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Add Contact</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search contacts...">
+            <button class="search-btn">Search</button>
+        </div>
+        
+        <div class="stats-container">
+            <h3>Contact Statistics</h3>
+            <div id="letter-stats" class="letter-stats"></div>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="contact-list">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
